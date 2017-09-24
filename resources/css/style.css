@@ -1,0 +1,25 @@
+/* Global Styles */
+
+  html {
+    font-size: 14px;
+  }
+
+  body {
+    background-color: #ccc;
+  }
+
+/* Nav */
+
+  nav {
+    background-color: white;
+  }
+
+  .navbar-default .navbar-nav li a {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+
+  .navbar-default .navbar-nav li:first-child a {
+    color: #399bd1;
+  }
