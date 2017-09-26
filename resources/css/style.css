@@ -57,10 +57,16 @@ font-family: 'Monoton', cursive;
                   1px 1px 0 #000;
   }
 
+  @media only screen and (max-width:767px) {
+    .carousel .jumbotron h1 {
+      font-size: 5.7rem;
+    }
+  }
+
   .carousel .jumbotron p {
     margin: 0 auto;
     color: white;
-    width: 51.3rem;
+    max-width: 51.3rem;
   }
 
   .carousel-btn a {
@@ -117,14 +123,19 @@ font-family: 'Monoton', cursive;
   #featured .img-container {
     margin-bottom: 1.8rem;
     height: 19rem;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   #featured img {
-
+    opacity: 0.5;
+    -webkit-transition: opacity 0.5s, transform 0.5s; /* Safari */
+    transition: opacity 0.5s, transform 0.5s;
   }
 
   #featured img:hover {
-    max-width: 120%;
+    transform: scale(1.3);
+    opacity: 1;
   }
 
   #featured h2, #featured h3 {
@@ -164,6 +175,14 @@ font-family: 'Monoton', cursive;
 
   #projects img {
     width: 100%;
+    opacity: 0.5;
+    -webkit-transition: opacity 0.5s, transform 0.5s; /* Safari */
+    transition: opacity 0.5s, transform 0.5s;
+  }
+
+  #projects img:hover {
+    transform: scale(1.3);
+    opacity: 1;
   }
 
   #projects h2, #projects h3 {
